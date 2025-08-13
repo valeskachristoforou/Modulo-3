@@ -1,4 +1,4 @@
-#Crea la funcion  Actualizar valores en diccionarios y listas
+
 matriz = [ [10, 15, 20], [3, 7, 14] ]
 matriz[1][0] = 6  # Cambiar 3 por 6
 
@@ -20,29 +20,22 @@ coordenadas = [
 coordenadas[0]["latitud"] = 9.9355431  # Cambiar valor de latitud
 
 
-# Función 2: Iterar a través de una lista de diccionarios e imprimir cada llave y valor
+
 def iterarDiccionario(lista):
     for dic in lista:
-        # Forma básica, imprimir cada llave y valor en líneas separadas
-        # for llave, valor in dic.items():
-        #     print(f"{llave}: {valor}")
-        # print()
-
-        # BONUS: imprimir en formato "llave - valor, llave - valor"
+   
         salida = []
         for llave, valor in dic.items():
             salida.append(f"{llave} - {valor}")
         print(", ".join(salida))
 
 
-# Función 3: Obtener valores de una lista de diccionarios según la llave dada
 def iterarDiccionario2(llave, lista):
     for dic in lista:
         if llave in dic:
             print(dic[llave])
 
 
-# Función 4: Iterar un diccionario con listas e imprimir cantidad y elementos
 def imprimirInformacion(diccionario):
     for clave in diccionario:
         lista = diccionario[clave]
@@ -52,7 +45,7 @@ def imprimirInformacion(diccionario):
         print()  # línea en blanco para separar
 
 
-# Aquí puedes hacer pruebas si quieres, por ejemplo:
+
 if __name__ == "__main__":
     # Probamos las funciones con los datos dados:
     print("Matriz actualizada:", matriz)
